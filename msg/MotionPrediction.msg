@@ -29,6 +29,9 @@ float64 ood_score
 # Whether this prediction is valid (enough good poses in buffer)
 bool is_valid
 
+# Timestamp of the image that triggered this prediction
+builtin_interfaces/Time t_image
+
 # Inference-side timing (time.perf_counter() * 1000, ms, inference machine clock)
 # Used by the streamer node to compute end-to-end latency breakdowns.
 int64 t_received_ms       # image arrived at inference node

@@ -22,6 +22,9 @@ float64 ood_score
 # Whether a human was detected in the frame
 bool human_detected
 
+# Timestamp of the image this pose was estimated from
+builtin_interfaces/Time t_image
+
 # Inference-side timing (time.perf_counter() * 1000, ms, inference machine clock)
 # Used by the streamer node to compute end-to-end latency breakdowns.
 int64 t_received_ms       # image arrived at inference node

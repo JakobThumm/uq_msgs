@@ -25,3 +25,6 @@ float64 ood_score
 
 # Whether a human was detected in the frame
 bool human_detected
+
+# Timestamp of the image this pose was estimated from
+builtin_interfaces/Time t_image
